@@ -1,4 +1,4 @@
-# Fluid
+# RBD with Fluid
 우선 Flat Tank로 시작했다. 파도를 만들기 위해 grid에 oceanwaves, oceanvaluate 노드를 이어준다.         
 
 mountain에 Flow나 Periodic FLow를 적용시켜줘도 바다를 만들 수 있지만, ocean 계열 노드가 볼륨까지 만들어주기에 작업하기에는 조금 더 편리한것 같다.  

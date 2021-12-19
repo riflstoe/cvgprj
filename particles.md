@@ -23,21 +23,21 @@ Dot Product는 내적이다. 아직 나에게는 많이 쓰이지 않는 것 같
 # Popcurveforce
 몰랐다. 커브를 그대로 벡터로 사용할 수 있다. 방향이 중요하다 안된다면 reverse로 u를 뒤집어주자    
 
-int myprim;
-vector myuv;
-xyzdist(1, @P, myprim, myuv);
-vector direction = primuv(1, "N", myprim, myuv);
-vector pos = primuv(1, "P", myprim, myuv);
-float curveu = primuv(1, "curveu", myprim, myuv);
-vector cd = primuv(1, "Cd", myprim, myuv);
+int myprim;   
+vector myuv;    
+xyzdist(1, @P, myprim, myuv);   
+vector direction = primuv(1, "N", myprim, myuv);    
+vector pos = primuv(1, "P", myprim, myuv);    
+float curveu = primuv(1, "curveu", myprim, myuv);   
+vector cd = primuv(1, "Cd", myprim, myuv);    
+  
+if (curveu < //n ) removepoint(0, @ptnum);    
 
-if (curveu < //n ) removepoint(0, @ptnum);
+vector suction = ( @P - pos ) * -1 * chf('suction');    
+suction *= chramp("suctionramp", curveu);   
+direction *= chf('speed');    
 
-vector suction = ( @P - pos ) * -1 * chf('suction');
-suction *= chramp("suctionramp", curveu);
-direction *= chf('speed');
-
-v@force += suction + direction;
+v@force += suction + direction;   
 
 유튜브에서 찾은 popcurveforce보다 개선된 vex wrangle 코드다.   
 포인트 어트리뷰트 U와 탄젠트에 노말이 들어가야 하는 것 같다.   

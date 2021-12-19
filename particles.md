@@ -23,15 +23,15 @@ Dot Product는 내적이다. 아직 나에게는 많이 쓰이지 않는 것 같
 # Popcurveforce
 몰랐다. 커브를 그대로 벡터로 사용할 수 있다. 방향이 중요하다 안된다면 reverse로 u를 뒤집어주자    
 
-int myprim;   
-vector myuv;    
-xyzdist(1, @P, myprim, myuv);   
-vector direction = primuv(1, "N", myprim, myuv);    
-vector pos = primuv(1, "P", myprim, myuv);    
-float curveu = primuv(1, "curveu", myprim, myuv);   
-vector cd = primuv(1, "Cd", myprim, myuv);    
+int (  1  );   
+vector (  2  );    
+xyzdist(1, @P, (  1  ), (  2  ));   
+vector direction = primuv(1, "N", (  1  ), (  2  ));    
+vector pos = primuv(1, "P", (  1  ), (  2  ));    
+float curveu = primuv(1, "curveu", (  1  ), (  2  ));   
+vector cd = primuv(1, "Cd", (  1  ), (  2  ));    
   
-if (curveu < //n ) removepoint(0, @ptnum);    
+if (curveu < (  n  )) removepoint(0, @ptnum);    
 
 vector suction = ( @P - pos ) * -1 * chf('suction');    
 suction *= chramp("suctionramp", curveu);   

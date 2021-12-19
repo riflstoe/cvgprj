@@ -11,9 +11,12 @@ Buoyancy Scale : 상승 속도, 온도 기반
 Pyro solver 안에 Volume source 넣는 방식으로 많이 쓴다. 
 
 ## Pyrosolver
-Gasturbulance : 잘 모르겠다. 이 노드를 끼우면 시뮬레이션이 너무 느려진다
+#### Micro solver    
+Gasturbulance : 노이즈를 넣는 프리솔버인데 너무 느리다.    
 Gasdisturb : 연기의 자글자글한 디테일을 추가해준다.     
 
+
+#### Parameter
 Time Scale : 시뮬레이션의 빠르기, 전체적인 타임을 루즈하게 만들어주는게 아니라 뭔가가 일어나는 속도를 빠르게 해줌   
 Temp. Diffusion : 냉각 속도라고 하는데 Cooling rate가 냉각 속도인것 같고 이건 잘 모르겠다. 값이 높을수록 볼륨이 빨리 사라진다  쓰기 어려운것 같다   
 Cooling Rate : 냉각 속도, 1이면 작동을 안하는데 0.99999999만 해도 시뮬레이션이 확 바뀐다. 정말 제일 쓰기 어려운 파라미터   
